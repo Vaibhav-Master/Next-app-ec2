@@ -1,6 +1,6 @@
 "use client";
 import { useRouter } from "next/navigation";
-import { useState, useEffect, ChangeEvent, FormEvent } from "react";
+import { useState, useEffect } from "react";
 
 // Define types for form data and user
 interface User {
@@ -13,14 +13,7 @@ interface User {
 }
 
 export default function Home() {
-  const [formData, setFormData] = useState<User>({
-    first_name: "",
-    last_name: "",
-    address: "",
-    phone: "",
-    email: "",
-  });
-const route =useRouter()
+  const route = useRouter();
   const [users, setUsers] = useState<User[]>([]);
 
   // Fetch users when the component mounts
@@ -48,7 +41,7 @@ const route =useRouter()
         type="button"
         onClick={() => route.replace("/")}
       >
-        Back 
+        Back
       </button>
       <p className="text-[40px] font-extrabold my-12"> Users deatils</p>
       <div className="relative max-w-[90%] overflow-x-auto shadow-md sm:rounded-lg">

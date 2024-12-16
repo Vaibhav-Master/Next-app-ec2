@@ -94,7 +94,7 @@ const AddUserForm: React.FC = () => {
 
   return (
     <div className="flex flex-col justify-center items-center">
-      <p className="font-extrabold text-[40px] my-12">Let's add user details</p>
+      <p className="font-extrabold text-[40px] my-12">Lets add user details</p>
 
       <form className="max-w-[80%]" onSubmit={handleSubmit}>
         <div className="flex flex-wrap -mx-3 mb-6">
