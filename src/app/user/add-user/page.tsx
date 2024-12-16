@@ -63,7 +63,7 @@ const AddUserForm: React.FC = () => {
     if (!validateForm()) return; // Stop submission if validation fails
 
     try {
-      const response = await fetch("http://localhost:5000/user", {
+      const response = await fetch("http://34.224.7.185:5000/user", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
